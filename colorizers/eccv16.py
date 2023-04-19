@@ -99,7 +99,7 @@ class ECCVGenerator(BaseColor):
 
         return self.unnormalize_ab(self.upsample4(out_reg))
 
-def eccv16(pretrained=True, temperature=1.0):
+def eccv16(pretrained=True, temperature=0.38):
 	model = ECCVGenerator(temperature=temperature)
 	if(pretrained):
 		import torch.utils.model_zoo as model_zoo
